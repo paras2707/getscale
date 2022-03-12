@@ -2,6 +2,7 @@ import Button from "./components/Button";
 import Dropdown from "./components/DropdownList";
 import classes from "./Navbar.module.css";
 import logo from "./static/logo_crop.png";
+import { AiOutlineSearch } from "react-icons/ai";
 
 const NavBar = () => {
   return (
@@ -13,10 +14,26 @@ const NavBar = () => {
           alt="Logo"
           style={{ marginTop: "-16px", width: "240px" }}
         />
-        <Button
-          text="Sign In"
-          style={{ marginRight: "31px", width: "110px" }}
-        />
+        <div>
+          <span
+            style={{
+              display: "inline-block",
+              verticalAlign: "middle",
+              marginRight: "20px",
+              cursor: "pointer",
+            }}
+          >
+            <AiOutlineSearch
+              size="50px"
+              color="white"
+              onClick={() => console.log("clicked")}
+            />
+          </span>
+          <Button
+            text="Sign In"
+            style={{ marginRight: "31px", width: "110px" }}
+          />
+        </div>
       </div>
     </div>
   );

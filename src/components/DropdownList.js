@@ -2,7 +2,7 @@ import { useState } from "react";
 import classes from "./DropdownList.module.css";
 
 const Dropdown = () => {
-  const [value, setValue] = useState();
+  const [value, setValue] = useState("Companies");
 
   const handleDropdownChange = (e) => {
     setValue(e.target.value);
@@ -14,9 +14,7 @@ const Dropdown = () => {
       value={value}
       onChange={(e) => handleDropdownChange(e)}
     >
-      <option selected value="companies">
-        Companies
-      </option>
+      <option value="companies">Companies</option>
       <option value="investors">Investors</option>
     </select>
   );
