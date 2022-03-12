@@ -1,0 +1,15 @@
+.dropdown {
+  background-color: #5ea0ff;
+  width: 157px;
+  text-decoration: none;
+  color: white;
+  border: none;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 31px;
+  outline: none;
+  cursor: pointer;
+}
