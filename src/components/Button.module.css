@@ -1,4 +1,14 @@
 .btn {
-  background-color: #5ea0ff;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 160px;
+  height: 55px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  background: #5ea0ff;
   border-radius: 10px;
 }

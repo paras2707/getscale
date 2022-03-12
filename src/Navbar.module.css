@@ -2,4 +2,7 @@
   background-color: #86b8ff;
   width: auto;
   height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
