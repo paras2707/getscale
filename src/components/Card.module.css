@@ -11,12 +11,8 @@
   /* position: absolute; */
   width: 111px;
   height: 111px;
-  left: 20px;
-  top: 18px;
+  margin-left: 20px;
   margin-top: 18px;
-  margin-left: 19px;
-  margin-bottom: 35px;
-
   background: #b8b8b8;
   border-radius: 10px;
 }
@@ -39,4 +35,57 @@
 
   background: #5ea0ff;
   border-radius: 10px;
+}
+.title {
+  position: absolute;
+  width: 42px;
+  height: 27px;
+  margin-left: 141px;
+  margin-top: 15px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+
+  color: #727272;
+}
+.company {
+  position: absolute;
+  width: 74px;
+  height: 22px;
+  margin-left: 38px;
+  margin-top: 134px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #727272;
+}
+.up {
+  position: absolute;
+  margin-left: 140px;
+  margin-right: 632px;
+  margin-top: 137px;
+  margin-bottom: 7px;
+  /* background: #727272; */
+}
+
+.bottom {
+  position: absolute;
+  margin-left: 180px;
+  margin-right: 600px;
+  margin-top: 137px;
+  margin-bottom: 7px;
+}
+.comment {
+  position: absolute;
+  margin-left: 225px;
+  margin-right: 527px;
+  margin-top: 137px;
+  margin-bottom: 9px;
 }
