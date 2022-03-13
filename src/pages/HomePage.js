@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../components/Card";
 import NavBar from "../NavBar";
 import { IoFilter } from "react-icons/io5";
 import { RiArrowUpDownFill } from "react-icons/ri";
 import { IconContext } from "react-icons";
 import Button from "../components/Button";
+// import Modal from "../components/Modal";
+import IdeaFrom from "../forms/IdeaForm";
 
 const data = [
   {
@@ -45,8 +47,13 @@ const data = [
 ];
 
 const HomePage = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  // const Modal = <Modal />
+
   return (
     <div>
+      {modalOpen && <IdeaFrom setModalOpen={setModalOpen} />}
       <NavBar />
       <div
         style={{
@@ -107,6 +114,7 @@ const HomePage = () => {
               borderRadius: "50%",
             }}
             text="+"
+            onClick={() => setModalOpen(true)}
           />{" "}
         </div>
         {data.map((entry) => (

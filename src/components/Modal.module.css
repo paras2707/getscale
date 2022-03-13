@@ -1,0 +1,24 @@
+.backdrop {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.card {
+  height: 500px;
+  width: 500px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #727272;
+}
+
+.centered {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
