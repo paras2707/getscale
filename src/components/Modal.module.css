@@ -14,6 +14,7 @@
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   color: #727272;
+  z-index: 2;
 }
 
 .centered {
@@ -21,4 +22,11 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.cross {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
 }

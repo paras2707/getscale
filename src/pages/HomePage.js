@@ -48,12 +48,18 @@ const data = [
 
 const HomePage = () => {
   const [modalOpen, setModalOpen] = useState(false);
+  const [userData, setUserData] = useState(data);
 
-  // const Modal = <Modal />
+  const handleSubmit = (data) => {
+    console.log(data);
+    setUserData((prevData) => [...prevData, data]);
+  };
 
   return (
     <div>
-      {modalOpen && <IdeaFrom setModalOpen={setModalOpen} />}
+      {modalOpen && (
+        <IdeaFrom setModalOpen={setModalOpen} submit={handleSubmit} />
+      )}
       <NavBar />
       <div
         style={{
@@ -117,7 +123,7 @@ const HomePage = () => {
             onClick={() => setModalOpen(true)}
           />{" "}
         </div>
-        {data.map((entry) => (
+        {userData.map((entry) => (
           <Card
             key={entry.id}
             text={entry.title}

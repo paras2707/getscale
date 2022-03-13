@@ -21,7 +21,9 @@ function Card(props) {
           <div className={classes.title}> {props.text} </div>
           <div style={{ display: "flex", height: "fit-content" }}>
             {props.tags.map((tag) => (
-              <div className={classes.tag}>{tag}</div>
+              <div key={tag} className={classes.tag}>
+                {tag}
+              </div>
             ))}
           </div>
           <div className={classes.side}>{props.description}</div>
