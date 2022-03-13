@@ -1,11 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import Modal from "../components/Modal";
 import classes from "./IdeaForm.module.css";
 
 const IdeaFrom = (props) => {
-  // const [dropChange, setDropChange] = useState("Technology"); 
+  const [dropChange, setDropChange] = useState("Technology"); 
   function handleSelectChange(e) {
-    console.log(e)
+    setDropChange(e.target.value)
   }
   return (
     <Modal setModalOpen={props.setModalOpen} className={classes.centeredForm}>
@@ -19,7 +19,7 @@ const IdeaFrom = (props) => {
             </div>
             <div>
               <label>Category:</label>
-              <select required style={{width: "90%", height: "2rem"}} onChange={handleSelectChange}>
+              <select required style={{width: "90%", height: "2rem"}} onChange={handleSelectChange} value={dropChange}>
                 <option>Technology</option>
                 <option>Education</option>
                 <option>Fintech</option>
