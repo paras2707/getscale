@@ -7,85 +7,78 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
 }
+
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.infoContainer {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
 .image {
-  /* position: absolute; */
   width: 111px;
   height: 111px;
-  margin-left: 20px;
-  margin-top: 18px;
   background: #b8b8b8;
   border-radius: 10px;
 }
 .side {
-  position: absolute;
   width: 617px;
-  height: 64px;
-  margin-left: 141px;
-  margin-top: 65px;
-
-  background: #b8b8b8;
+  min-height: 54px;
+  height: fit-content;
+  /* background-color: #c2c2c2; */
+  margin-bottom: 8px;
   border-radius: 10px;
+  color: #727272;
+  font-family: "Open Sans";
+  font-size: 13px;
 }
-.tittle {
-  position: absolute;
-  width: 47px;
-  height: 14px;
-  margin-left: 141px;
-  margin-top: 45px;
-
+.tag {
+  width: auto;
+  height: 20px;
+  margin-right: 10px;
   background: #5ea0ff;
   border-radius: 10px;
+  color: white;
+  font-family: "Open Sans";
+  padding: 0px 10px;
+  font-size: 13px;
 }
 .title {
-  position: absolute;
-  width: 42px;
+  width: auto;
   height: 27px;
-  margin-left: 141px;
-  margin-top: 15px;
-
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  line-height: 27px;
-  text-align: center;
-
   color: #727272;
 }
 .company {
-  position: absolute;
-  width: 74px;
+  width: auto;
   height: 22px;
-  margin-left: 38px;
-  margin-top: 134px;
+  margin-top: 10px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 22px;
   text-align: center;
   color: #727272;
 }
-.up {
-  position: absolute;
-  margin-left: 140px;
-  margin-right: 632px;
-  margin-top: 137px;
-  margin-bottom: 7px;
-  /* background: #727272; */
-}
 
-.bottom {
-  position: absolute;
-  margin-left: 180px;
-  margin-right: 600px;
-  margin-top: 137px;
-  margin-bottom: 7px;
-}
-.comment {
-  position: absolute;
-  margin-left: 225px;
-  margin-right: 527px;
-  margin-top: 137px;
-  margin-bottom: 9px;
+.iconContainer {
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 14px;
 }

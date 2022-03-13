@@ -3,6 +3,7 @@ import Dropdown from "./components/DropdownList";
 import classes from "./Navbar.module.css";
 import logo from "./static/logo_crop.png";
 import { AiOutlineSearch } from "react-icons/ai";
+import React from "react";
 
 const NavBar = () => {
   return (
@@ -12,7 +13,7 @@ const NavBar = () => {
         <img
           src={logo}
           alt="Logo"
-          style={{ marginTop: "-16px", width: "240px" }}
+          style={{ marginTop: "-16px", width: "240px", cursor: "pointer" }}
         />
         <div>
           <span
