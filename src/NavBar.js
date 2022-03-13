@@ -3,9 +3,16 @@ import Dropdown from "./components/DropdownList";
 import classes from "./Navbar.module.css";
 import logo from "./static/logo_crop.png";
 import { AiOutlineSearch } from "react-icons/ai";
-import React from "react";
+import React, { useState } from "react";
+import { ImCross } from "react-icons/im";
 
 const NavBar = () => {
+  const [searching, setSearching] = useState(false);
+
+  const handleSearch = () => {
+    setSearching(true);
+  };
+
   return (
     <div>
       <div className={classes.navbar}>
@@ -13,22 +20,43 @@ const NavBar = () => {
         <img
           src={logo}
           alt="Logo"
-          style={{ marginTop: "-16px", width: "240px", cursor: "pointer" }}
+          style={{
+            marginTop: "-16px",
+            width: "240px",
+            cursor: "pointer",
+            position: "absolute",
+            left: "50%",
+            transform: "translate(-50%, 15%)",
+          }}
         />
-        <div>
+        <div style={{ height: "100%" }}>
           <span
             style={{
               display: "inline-block",
               verticalAlign: "middle",
               marginRight: "20px",
               cursor: "pointer",
+              height: "100%",
+              lineHeight: "76px",
             }}
           >
-            <AiOutlineSearch
-              size="50px"
-              color="white"
-              onClick={() => console.log("clicked")}
-            />
+            {searching && (
+              <div>
+                <input type="text" className={classes.searchBox} />
+                <ImCross
+                  className={classes.crossIcon}
+                  onClick={() => setSearching(false)}
+                />
+              </div>
+            )}
+            {!searching && (
+              <AiOutlineSearch
+                size="50px"
+                color="white"
+                onClick={handleSearch}
+                style={{ verticalAlign: "middle" }}
+              />
+            )}
           </span>
           <Button
             text="Sign In"

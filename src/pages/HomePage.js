@@ -52,7 +52,7 @@ const HomePage = () => {
 
   const handleSubmit = (data) => {
     console.log(data);
-    setUserData((prevData) => [...prevData, data]);
+    setUserData((prevData) => [data, ...prevData]);
   };
 
   return (

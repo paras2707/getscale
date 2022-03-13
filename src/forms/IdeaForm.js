@@ -72,7 +72,7 @@ const IdeaFrom = (props) => {
             <div>
               <label>Category:</label>
               <select
-                style={{ width: "90%", height: "2rem" }}
+                style={{ width: "90%", height: "2rem", border: "none" }}
                 onChange={(e) => handleDropdownChange(e)}
                 value={value}
               >
