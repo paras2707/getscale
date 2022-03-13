@@ -3,3 +3,24 @@
   flex-direction: column;
   align-items: center;
 }
+.formFields {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  /* align-items: center; */
+  justify-content: space-evenly;
+}
+.container {
+  height: 100%;
+  width: 100%;
+}
+label {
+  display: block;
+  font-size: 1rem;
+}
+.inputfield {
+  width: 90%;
+  height: 2rem;
+}
